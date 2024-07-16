@@ -25,4 +25,4 @@
     - Then as we add context in the system prompt itself and send the user query and get the generation done by the model based on the context.
 - Check the below architecture
 
-![RAG architecture found in nvidia blogs](https://blogs.nvidia.com/wp-content/uploads/2023/11/NVIDIA-RAG-diagram-scaled.jpg)
+![source: https://blog.langchain.dev](https://blog.langchain.dev/content/images/size/w1000/2024/02/image-16.png)
