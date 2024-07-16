@@ -23,3 +23,6 @@
     - Now we have top K chunks of text based on the user's query.
     - We set up a system prompt as like "You are an assistant tasked to answer user queries based on the context given below. Keep it consise, precise if you don't know tell you don't know don't make up answers".
     - Then as we add context in the system prompt itself and send the user query and get the generation done by the model based on the context.
+- Check the below architecture
+
+![RAG architecture found in nvidia blogs](https://blogs.nvidia.com/wp-content/uploads/2023/11/NVIDIA-RAG-diagram-scaled.jpg)
