@@ -16,7 +16,8 @@ EMBEDDINGS_BATCH_SIZE = int(
 )  # The number of embeddings to request at a time
 MAX_NUM_CHUNKS = 10000
 EMBEDDING_MODEL = "text-embedding-3-small"
-LLM_MODEL = "gpt-3.5-turbo-0125"
+LLM_MODEL = "gpt-4o-mini"
+TOKENIZER_MODEL = "o200k_base"
 
 
 # Lets start by getting data
@@ -42,7 +43,7 @@ def get_text_chunk(
     """
     Implementation of text splitter based on fixed chunk size
     """
-    tokenizer = tiktoken.encoding_for_model(LLM_MODEL)
+    tokenizer = tiktoken.get_encoding(TOKENIZER_MODEL)
     # convert pdf to text.
     text = extract_text(file_path)
     chunks = []
